@@ -1,0 +1,69 @@
+CODE 1 :
+  print("Hello, World!")
+
+CODE 2:
+ #!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+
+
+if __name__ == '__main__':
+    n = int(input().strip())
+    s = n % 2
+    if s==1:
+        print("Weird")
+    elif n>2 and n<5:
+        print("Not Weird")
+    elif n>6 and n<=20:
+        print("Weird")
+    elif n>20 :
+        print("Not Weird")
+
+
+CODE 3 :
+ if __name__ == '__main__':
+    a = int(input())
+    b = int(input())
+    print(a+b)
+    print(a-b)
+    print(a*b)
+
+CODE 4:
+   if __name__ == '__main__':
+    a = int(input())
+    b = int(input())
+    print(a//b)
+    print(a/b)
+
+CODE 5 :
+ if __name__ == '__main__':
+    n = int(input())
+    for i in range(n):
+        print(i*i)
+
+CODE 6:
+   def is_leap(year):
+    leap = False
+    if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+        return True
+    # Write your logic here
+    
+    return leap
+
+year = int(input())
+
+CODE 7 :
+ if __name__ == '__main__':
+    n = int(input())
+    st=""
+    for i in range(n):
+        st+=str(i+1)
+    print(st)
+ 
+
+   

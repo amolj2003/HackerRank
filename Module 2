@@ -1,0 +1,145 @@
+CODE 1:
+
+n = int(input())
+
+# Read the elements as a space-separated string and convert them to integers
+elements = list(map(int, input().split()))
+
+# Create a tuple from the elements
+T = tuple(elements)
+
+# Calculate the hash value of the tuple T
+result = hash(T)
+
+# Print the result
+print(result)
+
+CODE 2:
+if __name__ == '__main__':
+    x = int(input())
+    y = int(input())
+    z = int(input())
+    n = int(input())
+    l = x * y * z
+    S = []
+
+    for i in range(x+1):
+        for j in range(y+1):
+            for k in range(z+1):
+                S.append([i, j, k])
+
+    T = []
+
+    for p in range(len(S)):
+        if (S[p][0] + S[p][1] + S[p][2] == n):
+            pass
+        else:
+            T.append(S[p])
+    print(T)
+
+CODE 3:
+if __name__ == '__main__':
+    n = int(input())
+    arr = map(int, input().split())
+    ARRAY=list(arr)
+    ARRAY
+    T=set(ARRAY)
+    T=list(T)
+    T.sort(reverse=True)
+    if(len(T)<2):
+        print(0) 
+    else:      
+        print(T[1])
+
+CODE 4:
+  if __name__ == '__main__':
+    arr=[]
+    arr1=[]
+    for i in range(int(input())):
+        name = input()
+        score = float(input())
+        arr.append([name,score])
+        arr1.append(score)
+    arr1=set(arr1)
+    arr1=list(arr1)
+    arr1.sort() 
+    Secmax=arr1[1]
+    arr.sort()
+    
+# Print the sorted list
+    count=1
+    for j in range(len(arr)):
+        if(arr[j][1]==Secmax):
+            print(arr[j][0])
+            count=count+1
+            if(count==3):
+              break
+
+CODE 5:
+if __name__ == '__main__':
+    n = int(input())
+    student_marks = {}
+    for _ in range(n):
+        name, *line = input().split()
+        scores = list(map(float, line))
+        student_marks[name] = scores
+    query_name = input()
+    marks = student_marks[query_name]
+    average = sum(marks) / len(marks)
+
+    # Format the average to two decimal places
+    formatted_average = "{:.2f}".format(average)
+
+    print(formatted_average)
+
+CODE 6:
+if __name__ == '__main__':
+    N = int(input())
+    arr=[]
+    def insert(p,q):
+        arr.insert(p,q)
+        
+    def remove(p):
+        arr.remove(p)
+        
+    def append(p):
+        arr.append(p)
+    
+    def sort():
+        arr.sort()
+    
+    def pop():
+        arr.pop()
+        
+    def reverse():
+        arr.reverse()
+    
+    def printt():
+        print(arr)    
+        
+            
+    for i in range(N):
+        name,*line=input().split()
+        number=list(map(int,line))
+        
+        if(name=="insert"):
+          insert(number[0],number[1])
+        
+        if(name=="remove"):
+            remove(number[0])
+        
+        if(name=="append"):
+            append(number[0])
+        
+        if(name=="print"):
+            printt()
+            
+        if(name=="pop"):
+            pop()
+            
+        if (name=="reverse"):
+            reverse()  
+            
+        if(name=="sort"):
+            sort()
+

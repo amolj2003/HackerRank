@@ -1,0 +1,63 @@
+CODE 1:
+
+def count_substring(string, sub_string):
+    value=
+    while value!=0:
+        value=string.index(sub_string)
+        m.append(value)
+        string.remove(Value)
+    
+    return
+
+if __name__ == '__main__':
+
+CODE 2:
+
+def swap_case(s):
+    T=s.upper()
+    P=s.lower()
+    k=""
+    l=0
+    for i in s:
+        if(T[l]==i):
+            k+=str(P[l])
+            l=l+1
+        else:
+            k+=str(T[l])
+            l=l+1
+    return k
+
+if __name__ == '__main__':
+
+CODE 3:
+
+def split_and_join(line):
+    a = line
+    a = a.split(" ") 
+    if(a==0):
+        return 0
+        # a is converted to a list of strings. 
+    a = "-".join(a)
+    return a 
+
+if __name__ == '__main__':
+
+CODE4:
+
+def print_full_name(first, last):
+    print("Hello %s %s! You just delved into python." % (first, last))
+
+if __name__ == '__main__':
+
+CODE 5:
+def mutate_string(string, position, character):
+    l=list(string)
+    st=""
+    l[position]=character
+    for i in l:
+     st+=str(i)
+    return st
+
+if __name__ == '__main__':
+
+
